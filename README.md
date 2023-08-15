@@ -6,7 +6,7 @@
 ## Overview
 
 This code can be used to group files into sub-folders, each sub-folder to be named with its common language name.
-The files provided, without grouping, are uploaded already into app/resources/files directory
+The files provided, without grouping, are uploaded already into **resources/files directory**
 
 I decided not to process all files at once, since the number of files is huge and might increase in the future, so I did the following:
    - Chunked the files and processed each chunk using app/Jobs/GroupFilesProcess.php <br />
@@ -49,7 +49,7 @@ Now, you can see the jobs processed in the queue with their status on the termin
 
 
 Note:<br />
-    You can upload any new language files into the app/resources/files directory, then run the command  <br />
+    You can upload any new language files into the resources/files directory, then run the command  <br />
     ```
     php artisan app:group-files 
     ```
